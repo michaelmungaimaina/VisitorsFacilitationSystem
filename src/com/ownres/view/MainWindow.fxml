@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainWindowAnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1464.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ownres.controller.MainWindowController">
+   <children>
+      <VBox layoutY="113.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="113.0">
+         <children>
+            <HBox fx:id="mainWindowHBox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="1464.0" spacing="10.0" style="-fx-border-color: white;">
+               <children>
+                  <AnchorPane fx:id="HboxAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1464.0">
+                     <children>
+                        <AnchorPane layoutY="540.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="540.0">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="5.0" prefHeight="89.0" prefWidth="1456.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="facilitateButton" mnemonicParsing="false" onAction="#launchFacilitationWindow" prefHeight="52.0" prefWidth="254.0" style="-fx-background-color: green;">
+                                       <graphic>
+                                          <Label fx:id="facilitationButton" alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="278.0" style="-fx-background-insets: 0px; -fx-background-color: green; -fx-background-radius: 10px; -fx-region-border: red;" text="FACILITATE">
+                                             <font>
+                                                <Font name="Georgia Bold" size="31.0" />
+                                             </font>
+                                          </Label>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="540.0" fitWidth="1463.0" pickOnBounds="true" AnchorPane.bottomAnchor="-24.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <image>
+                                    <Image url="@../icons/Main_Window.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="infoButton" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="125.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="41.0" prefWidth="647.0" style="-fx-background-color: #0f0554; -fx-text-fill: white; -fx-border-radius: 20px;" text="PUT YOURSELF FIRST, BE UNCONDITIONAL" textFill="#0f0554">
+                           <font>
+                              <Font name="Stencil" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="myLabel" alignment="CENTER" layoutX="705.0" layoutY="198.0" prefHeight="16.0" prefWidth="612.0" style="-fx-text-fill: cyan;" text="MAINA">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="detailButton" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="66.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="604.0" style="-fx-background-color: transparent; -fx-border-radius: 20px;" text="THE VISITOR IS THE BOSS">
+                           <font>
+                              <Font name="Georgia Bold" size="20.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.21734893321990967" green="0.6315789222717285" blue="0.13450291752815247" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.13745704467353953">
+                                       <color>
+                                          <Color red="0.2093050330877304" green="0.13860000669956207" blue="0.6299999952316284" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.27491408934707906">
+                                       <color>
+                                          <Color red="0.6299999952316284" green="0.1492057591676712" blue="0.13860000669956207" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.4123711340206186">
+                                       <color>
+                                          <Color red="0.1246345043182373" green="0.7927509546279907" blue="0.8157894611358643" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.5307895880238576">
+                                       <color>
+                                          <Color red="0.8289473652839661" green="0.04221491143107414" blue="0.6978253126144409" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6597938144329896">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.778725757396216">
+                                       <color>
+                                          <Color red="0.8539473414421082" green="0.9473684430122375" blue="0.01315789483487606" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.14938271045684814" green="1.0" blue="0.03703703731298447" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                        </Button>
+                        <Button fx:id="editSchoolInformationButton1" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="247.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="39.0" prefWidth="512.0" style="-fx-background-color: #f54c00; -fx-text-fill: white; -fx-border-radius: 20px;" text="SEEK VALIDATION BY EXTERNAL MEANS" textFill="#f54c00">
+                           <font>
+                              <Font name="Lucida Fax Demibold" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editSchoolInformationButton11" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="368.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="41.0" prefWidth="421.0" style="-fx-background-color: #0ec3e8; -fx-text-fill: white; -fx-border-radius: 20px;" text="CONVINCE WITH CLARITY" textFill="#0ec3e8">
+                           <font>
+                              <Font name="Liberation Mono" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editSchoolInformationButton111" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="185.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="41.0" prefWidth="437.0" style="-fx-background-color: #904545; -fx-text-fill: white; -fx-border-radius: 20px;" text="BE GOOD ENOUGH" textFill="#904545">
+                           <font>
+                              <Font name="Wide Latin" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editSchoolInformationButton2" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="14.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="53.0" prefWidth="827.0" style="-fx-border-radius: 20px; -fx-background-color: transparent;" text="DEDICATE, UNDERSTAND, TAKE RESPONSIBILITY">
+                           <font>
+                              <Font name="Source Code Pro" size="26.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="0.966824644549763" startX="0.20853080568720378" startY="0.962085308056872">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.9511573910713196" green="1.0" blue="0.023148147389292717" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.007662835249042145">
+                                       <color>
+                                          <Color red="0.9511573910713196" green="1.0" blue="0.023148147389292717" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.007662835249042145">
+                                       <color>
+                                          <Color green="0.25" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.34719753525299163">
+                                       <color>
+                                          <Color green="0.06666667014360428" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.36603863016945065">
+                                       <color>
+                                          <Color green="0.10000000149011612" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.39368803570723065">
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button fx:id="editSchoolInformationButton1111" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="432.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="41.0" prefWidth="461.0" style="-fx-background-color: #4ba44a; -fx-text-fill: white; -fx-border-radius: 20px;" text="MAINTAIN A GOOD RAPPORT" textFill="#4ba44a">
+                           <font>
+                              <Font name="Georgia Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="editSchoolInformationButton3" alignment="BASELINE_LEFT" layoutX="89.0" layoutY="306.0" mnemonicParsing="false" onAction="#editSchoolInformation" prefHeight="41.0" prefWidth="604.0" style="-fx-background-color: #ff0000; -fx-text-fill: white; -fx-border-radius: 20px;" text="ENQUIRE COURTEOUSLY WITH CONFIDENCE" textFill="RED">
+                           <font>
+                              <Font name="Linux Libertine G Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="112.0" prefWidth="1463.0" style="-fx-background-color: black;">
+         <children>
+            <HBox fx:id="buttonsHBox" alignment="CENTER_LEFT" layoutY="49.0" prefHeight="63.0" prefWidth="1511.0" spacing="5.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="49.0">
+               <children>
+                  <Label fx:id="infoLabel" alignment="CENTER" prefHeight="29.0" prefWidth="209.0" style="-fx-text-fill: fuchsia;" text="FACILITATION SYSTEM">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="usersButton" mnemonicParsing="false" onAction="#showUsersWindow" prefHeight="28.0" prefWidth="130.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="USERS">
+                     <tooltip>
+                        <Tooltip text="List of registered users" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="visitorsButton" layoutX="379.0" layoutY="25.0" mnemonicParsing="false" onAction="#showVisitorsWindow" prefHeight="31.0" prefWidth="131.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="VISITORS">
+                     <tooltip>
+                        <Tooltip text="List of unique instance of visitors" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="forgottenIdButton" layoutX="1054.0" layoutY="25.0" mnemonicParsing="false" onAction="#showForgotIdWindow" prefHeight="31.0" prefWidth="133.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="LEFT ID'S">
+                     <tooltip>
+                        <Tooltip text="Records of forgotten ID Cards" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="complimentsButton" layoutX="514.0" layoutY="25.0" mnemonicParsing="false" onAction="#showAvailableCompliments" prefHeight="31.0" prefWidth="148.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="COMPLIMENTS">
+                     <tooltip>
+                        <Tooltip text="Recommendations on the applicabilty of this system" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="complainsButton" layoutX="784.0" layoutY="25.0" mnemonicParsing="false" onAction="#showReportedComplains" prefHeight="30.0" prefWidth="133.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="COMPLAINS">
+                     <tooltip>
+                        <Tooltip text="View complains from Visitors" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="reportsButton" layoutX="1064.0" layoutY="25.0" mnemonicParsing="false" onAction="#showReports" prefHeight="31.0" prefWidth="133.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="REPORTS">
+                     <tooltip>
+                        <Tooltip text="Run reports of visitors facilitation process" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="graphsButton" layoutX="649.0" layoutY="25.0" mnemonicParsing="false" onAction="#showFacilitationGraphs" prefHeight="31.0" prefWidth="129.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="GRAPHS" />
+                  <Button fx:id="analysisButton" layoutX="919.0" layoutY="25.0" mnemonicParsing="false" onAction="#performAnalysis" prefHeight="30.0" prefWidth="133.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: indigo; -fx-text-fill: white;" text="ANALYSIS">
+                     <tooltip>
+                        <Tooltip text="Statistical Analysis of Visitors Facilitation process" />
+                     </tooltip>
+                  </Button>
+               </children>
+            </HBox>
+            <AnchorPane>
+               <children>
+                  <MenuBar fx:id="menuBar" style="-fx-text-fill: white; -fx-background-color: green;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logOutButton" layoutX="1186.0" layoutY="11.0" mnemonicParsing="false" onAction="#logoutMainWindow" prefHeight="39.0" prefWidth="107.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: red; -fx-text-fill: white;" text="LOGOUT" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="7.0">
+         <graphic>
+            <ImageView fx:id="logOutImageView" fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_shutdown_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Cick to Signout" />
+         </tooltip>
+      </Button>
+      <Button fx:id="menuButton" layoutY="11.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: darkblue; -fx-text-fill: white;" text="MENU" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="7.0">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_menu_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </Button>
+      <Label fx:id="nameLabel" layoutX="364.0" layoutY="-1.0" prefHeight="52.0" prefWidth="232.0" style="-fx-text-fill: white;" text="Michael" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="greetingLabel" layoutX="161.0" layoutY="-2.0" prefHeight="53.0" prefWidth="202.0" style="-fx-text-fill: white;" text="Good Afternoon," AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Georgia Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

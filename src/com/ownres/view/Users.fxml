@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="1390.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ownres.controller.UserController">
+   <children>
+      <HBox fx:id="topUserHbox" layoutX="2.0" layoutY="-2.0" prefHeight="73.0" prefWidth="1613.0" style="-fx-background-color: purple;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-225.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="87.0" text="MENU" textFill="#e3e8d2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_menu_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children></HBox>
+      <VBox fx:id="leftUserVBox" alignment="TOP_CENTER" layoutX="8.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="300.0" spacing="5.0" style="-fx-border-color: lightblue; -fx-border-width: 3px; -fx-background-radius: 5px,10px; -fx-border-radius: 5px;" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="77.0">
+         <children>
+            <HBox fx:id="topLeftUserHbox" alignment="BOTTOM_CENTER" prefHeight="49.0" prefWidth="300.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="296.0" style="-fx-text-fill: white;" text="USER INFORMATION">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <Label fx:id="userIdLabel" prefHeight="20.0" prefWidth="306.0" style="-fx-text-fill: white;" text="NATIONAL ID:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userIdText" prefHeight="25.0" prefWidth="340.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font></TextField>
+            <Label fx:id="userFirstNameLabel" layoutX="10.0" layoutY="84.0" prefHeight="23.0" prefWidth="306.0" style="-fx-text-fill: white;" text="FIRST NAME:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userFirstNameText" layoutX="10.0" layoutY="130.0" prefHeight="25.0" prefWidth="340.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font></TextField>
+            <Label fx:id="userSecondNameLabel" layoutX="13.0" layoutY="123.0" prefHeight="23.0" prefWidth="306.0" style="-fx-text-fill: white;" text="SECOND NAME:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userSecondNameText" layoutX="13.0" layoutY="88.0" prefHeight="25.0" prefWidth="340.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="userLastNameLabel" layoutX="10.0" layoutY="166.0" prefHeight="21.0" prefWidth="306.0" style="-fx-text-fill: white;" text="LAST NAME:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userLastNameText" layoutX="10.0" layoutY="212.0" prefHeight="25.0" prefWidth="340.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font></TextField>
+            <Label fx:id="userGenderLabel" layoutX="10.0" layoutY="248.0" prefHeight="22.0" prefWidth="306.0" style="-fx-text-fill: white;" text="GENDER:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="userGenderCombo" prefHeight="25.0" prefWidth="340.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;" />
+            <Label fx:id="userDesignitionLabel" layoutX="10.0" layoutY="330.0" prefHeight="19.0" prefWidth="306.0" style="-fx-text-fill: white;" text="DESIGNATION:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="userDesignitionCombo" layoutX="13.0" layoutY="313.0" prefHeight="25.0" prefWidth="340.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;" />
+            <Label fx:id="phoneNumberLabel" layoutX="10.0" layoutY="409.0" prefHeight="26.0" prefWidth="306.0" style="-fx-text-fill: white;" text="PHONE NUMBER:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneNumberText" layoutX="10.0" layoutY="339.0" prefHeight="25.0" prefWidth="306.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font></TextField>
+            <Label fx:id="passwordLabel" layoutX="10.0" layoutY="369.0" prefHeight="26.0" prefWidth="306.0" style="-fx-text-fill: white;" text="PASSWORD:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordText" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: gerrn;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font></PasswordField>
+         </children>
+      </VBox>
+      <TableView fx:id="userTableView" layoutX="318.0" layoutY="71.0" onMouseClicked="#showUser" prefHeight="535.0" prefWidth="1030.0" style="-fx-border-width: 5px; -fx-border-color: lightblue; -fx-background-radius: 10pxpx; -fx-border-radius: 10pxpx;" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="318.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0">
+        <columns>
+          <TableColumn fx:id="userIdCol" prefWidth="99.0" text="NATIONAL ID" />
+          <TableColumn fx:id="userFirstNameCol" prefWidth="158.0" text="FIRST NAME" />
+            <TableColumn fx:id="userSecondNameCol" prefWidth="75.0" text="SECOND NAME" />
+            <TableColumn fx:id="userLastNameCol" prefWidth="75.0" text="LAST NAME" />
+            <TableColumn fx:id="userGenderCol" prefWidth="75.0" text="GENDER" />
+            <TableColumn fx:id="userPhoneNumberCol" prefWidth="75.0" text="PHONE NUMBER" />
+            <TableColumn fx:id="userDesignitionCol" prefWidth="75.0" text="DESIGNATION" />
+            <TableColumn fx:id="userPasswordCol" prefWidth="75.0" text="PASSWORD" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Accordion />
+      <HBox fx:id="usertableViewHbox" alignment="CENTER_LEFT" layoutX="314.0" layoutY="651.0" prefHeight="57.0" prefWidth="1030.0" spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="serchText" prefHeight="32.0" prefWidth="207.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px;" />
+            <Button fx:id="serchButton" mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px;" text="Search">
+               <graphic>
+                  <ImageView fx:id="serchImageView" fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_search_480px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField fx:id="deleteText" prefHeight="32.0" prefWidth="207.0" promptText="Enter userId To Delete User" style="-fx-background-radius: 30px; -fx-border-radius: 30px;" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#DeleteUser1" prefHeight="21.0" prefWidth="207.0" style="-fx-background-radius: 30px; -fx-border-radius: 30px; -fx-background-color: red; -fx-text-fill: white;" text="DELETE USER">
+               <graphic>
+                  <ImageView fx:id="delete1imgeview" fitHeight="19.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_delete_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToMainWindow" prefHeight="26.0" prefWidth="228.0" style="-fx-border-radius: 30px; -fx-background-radius: 30px; -fx-background-color: green; -fx-text-fill: white;" text="BACK TO MAIN WINDOW">
+               <graphic>
+                  <ImageView fx:id="backImageView" fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_back_arrow_512px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <GridPane fx:id="userInformationGridPane" layoutX="14.0" layoutY="623.0" prefHeight="85.0" prefWidth="300.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="623.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addUserButton" mnemonicParsing="false" onAction="#addNewUser" prefHeight="25.0" prefWidth="135.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: blue; -fx-text-fill: white;" text="ADD USER">
+               <graphic>
+                  <ImageView fx:id="addImageView" fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_add_user_male_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="buttonRefresh" mnemonicParsing="false" onAction="#refreshFields" prefHeight="22.0" prefWidth="135.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: blue; -fx-text-fill: white;" text="REFRESH" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fx:id="refreshImageView1" fitHeight="19.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_refresh_60px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="deleteUserButton" mnemonicParsing="false" onAction="#deleteUser" prefHeight="25.0" prefWidth="135.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: red; -fx-text-fill: white;" text="DELETE USER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fx:id="deleteImageView" fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_delete_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="updateUserButton" mnemonicParsing="false" onAction="#updateUser" prefHeight="25.0" prefWidth="135.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-background-color: blue; -fx-text-fill: white;" text="UPDATE USER" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fx:id="updateImageView" fitHeight="15.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8_edit_property_480px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

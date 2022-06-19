@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newUserAnchorPane" prefHeight="584.0" prefWidth="1042.0" style="-fx-background-color: #47e7f7; -fx-background-radius: 10px; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ownres.controller.SignupWindowController">
+   <children>
+      <Label fx:id="newUserRegistrationLabel" alignment="CENTER" layoutX="396.0" layoutY="52.0" prefHeight="23.0" prefWidth="227.0" text="NEW USER REGISTRATION" textFill="#054d03">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="newUserGuideLabel" layoutX="358.0" layoutY="75.0" prefHeight="19.0" prefWidth="333.0" text="Kindly Complete the form below to complete regiatration" textFill="#072439">
+         <font>
+            <Font name="Serif Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="newUserFirstNameLabel" layoutX="96.0" layoutY="132.0" prefHeight="17.0" prefWidth="202.0" text="FIRST NAME:">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserFirstNameTextField" layoutX="87.0" layoutY="149.0" prefHeight="27.0" prefWidth="257.0" promptText="Enter Your First Name:" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label fx:id="newUserLabel" layoutX="408.0" layoutY="132.0" prefHeight="17.0" prefWidth="202.0" text="SECOND NAME:">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="newUserSecondNameTextField" fx:id="newUserSecondNameTextField" layoutX="396.0" layoutY="149.0" prefHeight="27.0" prefWidth="257.0" promptText="Enter Your Second Name:" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label fx:id="newUserGenderLabel" layoutX="96.0" layoutY="187.0" prefHeight="17.0" prefWidth="202.0" text="GENDER:">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="newUserPasswordLabel" layoutX="408.0" layoutY="245.0" prefHeight="17.0" prefWidth="202.0" text="ENTER PASSWORD:">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="newUserPasswordTextField" layoutX="396.0" layoutY="263.0" prefHeight="27.0" prefWidth="257.0" promptText="Enter Password" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font></PasswordField>
+      <Label fx:id="newUserConfirmPasswordLabel" layoutX="703.0" layoutY="245.0" prefHeight="17.0" prefWidth="202.0" text="CONFIRM PASSWORD:">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="newUserConfirmPasswordTextField" layoutX="690.0" layoutY="263.0" prefHeight="27.0" prefWidth="257.0" promptText="Confirm Your Password" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font></PasswordField>
+      <Button fx:id="newUserRegisterButton" layoutX="690.0" layoutY="328.0" mnemonicParsing="false" onAction="#register" prefHeight="27.0" prefWidth="257.0" style="-fx-border-radius: 5px; -fx-border-color: blue; -fx-background-color: lightgreen; -fx-background-radius: 30px;" text="REGISTER" textFill="#1818d7">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Label layoutX="142.0" layoutY="567.0" text="Label" textFill="#47e7f7" />
+      <Button fx:id="newUserCancelButton" layoutX="87.0" layoutY="328.0" mnemonicParsing="false" onAction="#cancelSignup" prefHeight="27.0" prefWidth="257.0" style="-fx-border-color: blue; -fx-border-radius: 30px; -fx-background-color: red; -fx-background-radius: 30px;" text="CANCEL" textFill="#ddc2c7">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Button fx:id="newUserBackButton" layoutX="396.0" layoutY="328.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="27.0" prefWidth="257.0" style="-fx-border-color: blue; -fx-border-radius: 30px; -fx-background-color: blue; -fx-background-radius: 30;" text="LOGIN" textFill="#0bb9db">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Label fx:id="passwordMismatchLabel" layoutX="408.0" layoutY="298.0" prefHeight="17.0" prefWidth="257.0" text="Enter a strong password!!" textFill="#096121">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="warningLabel" alignment="CENTER" layoutX="365.0" layoutY="106.0" prefHeight="17.0" prefWidth="307.0" style="-fx-text-fill: red;" textFill="#ee1313">
+         <font>
+            <Font name="Times New Roman Italic" size="14.0" />
+         </font></Label>
+      <Label fx:id="newuserUserNameLabel" layoutX="703.0" layoutY="132.0" prefHeight="17.0" prefWidth="202.0" text="LAST NAME">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserNationalIdTextField" layoutX="396.0" layoutY="204.0" prefHeight="27.0" prefWidth="257.0" promptText="Enter Your ID Number" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label fx:id="newuserDesignationLabel" layoutX="96.0" layoutY="244.0" prefHeight="19.0" prefWidth="240.0" text="DESIGNATION:">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="genderComboBox" layoutX="87.0" layoutY="204.0" prefHeight="25.0" prefWidth="257.0" promptText="Select Gender" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-border-color: green;" />
+      <ComboBox fx:id="designationComboBox" layoutX="87.0" layoutY="263.0" prefHeight="25.0" prefWidth="257.0" promptText="Select Designation" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: green;" />
+      <ImageView fx:id="newUserImageView" fitHeight="49.0" fitWidth="53.0" layoutX="483.0" layoutY="3.0">
+         <image>
+            <Image url="@../icons/icons8_registration_480px.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="newUserLastNameTextField" layoutX="690.0" layoutY="149.0" prefHeight="27.0" prefWidth="257.0" promptText="Enter Your Last Name" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font></TextField>
+      <Label fx:id="newUserEmailLabel" layoutX="408.0" layoutY="186.0" prefHeight="19.0" prefWidth="246.0" text="NATIONAL ID">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserPhoneNumberTextField" layoutX="690.0" layoutY="204.0" prefHeight="27.0" prefWidth="257.0" promptText="Enter Your Phone Number" style="-fx-border-color: green; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="newUserPhoneNumberLabel" layoutX="703.0" layoutY="186.0" prefHeight="19.0" prefWidth="246.0" text="PHONE NUMBER">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

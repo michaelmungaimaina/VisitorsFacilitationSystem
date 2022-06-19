@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="171.0" prefWidth="1000.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="153.0" prefWidth="1001.0" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="529.0" prefWidth="236.0" spacing="10.0" style="-fx-background-color: darkblue;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="62.0" prefWidth="236.0">
+               <children>
+                  <Label layoutX="18.0" layoutY="23.0" prefHeight="35.0" prefWidth="186.0" style="-fx-text-fill: yellow;" text="SCHOOL DASHBOAD">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="USERS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="STUDENTS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="97.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="TEACHERS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="PARENTS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="147.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="LIBRARY">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="172.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="FINANCE">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="ACADEMICS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="SUBJECTS">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="247.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="EMPLOYEES">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="LABORATORY">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="297.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="NOTICEBOAD">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: black; -fx-text-fill: White;" text="CLUBS AND SOCIATIES">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="609.0" prefWidth="800.0">
+               <children>
+                  <VBox layoutX="14.0" prefHeight="510.0" prefWidth="269.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="179.0" text="SCHOOL NAME">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="179.0" text="SCHOOL MOTTO:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="41.0" prefHeight="27.0" prefWidth="226.0" text="SCHOOL PRINCIPAL:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="72.0" prefHeight="31.0" prefWidth="179.0" text="DEPUTY PRINCIPAL">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="103.0" prefHeight="31.0" prefWidth="179.0" text="COUNTRY:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="134.0" prefHeight="31.0" prefWidth="179.0" text="COUNTY:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="165.0" prefHeight="31.0" prefWidth="179.0" text="SUB COUNTY:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="196.0" prefHeight="31.0" prefWidth="179.0" text="LOCATION:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="227.0" prefHeight="31.0" prefWidth="179.0" text="SUB LOCATION:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="258.0" prefHeight="31.0" prefWidth="179.0" text="AREA SQRKM:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="289.0" prefHeight="31.0" prefWidth="179.0" text="POSTAL ADDRESS:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="320.0" prefHeight="28.0" prefWidth="250.0" text="DATE OF ESTABLISHMENT:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="457.0" prefHeight="28.0" prefWidth="250.0" text="SCHOOL TYPE:">
+                           <font>
+                              <Font name="Serif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="283.0" layoutY="2.0" prefHeight="510.0" prefWidth="400.0" spacing="15.0">
+                     <children>
+                        <TextField />
+                        <TextField layoutX="10.0" layoutY="10.0" />
+                        <TextField layoutX="10.0" layoutY="35.0" />
+                        <TextField layoutX="10.0" layoutY="60.0" />
+                        <ComboBox prefHeight="25.0" prefWidth="400.0" />
+                        <ComboBox layoutX="10.0" layoutY="170.0" prefHeight="25.0" prefWidth="420.0" />
+                        <ComboBox layoutX="10.0" layoutY="210.0" prefHeight="25.0" prefWidth="407.0" />
+                        <ComboBox layoutX="10.0" layoutY="250.0" prefHeight="25.0" prefWidth="413.0" />
+                        <ComboBox layoutX="10.0" layoutY="290.0" prefHeight="25.0" prefWidth="419.0" />
+                        <TextField layoutX="10.0" layoutY="130.0" />
+                        <TextField layoutX="10.0" layoutY="370.0" />
+                        <DatePicker prefHeight="25.0" prefWidth="401.0" />
+                        <ComboBox layoutX="10.0" layoutY="330.0" prefHeight="25.0" prefWidth="419.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

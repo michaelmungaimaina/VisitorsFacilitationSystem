@@ -1,0 +1,31 @@
+/* Set the text color and font size for the selected item in the control */
+.choice-box .label {
+        -fx-text-fill: black;
+        -fx-font-size: 10pt;
+}
+
+/* Set the text color and text font size for choices in the popup list */
+#choice-box-menu-item * {
+        -fx-text-fill: black;
+        -fx-font-size: 10pt;
+}
+
+/* Set background color of the arrow */
+.choice-box .arrow {
+        -fx-background-color: black;
+}
+
+/* Set the background color for the open-button area */
+.choice-box .open-button {
+
+}
+
+/* Change the background color of the popup */
+#choice-box-popup-menu {
+        -fx-background-color: white;
+}
+.button:hover {
+        -fx-text-fill: fuchsia;
+        -fx-background-color:magenta;
+}
+

@@ -1,0 +1,30 @@
+/* Set the font for the cells */
+.table-row-cell {
+        -fx-font-size: 10pt;
+        -fx-font-family: Arial;
+}
+
+/* Set the font size and text color for column headers */
+.table-view .column-header .label{
+        -fx-font-size: 10pt;
+        -fx-text-fill: blue;
+}
+ .table-row-cell {
+     -fx-background-color: white;
+ }
+
+ .table-row-cell .table-cell {
+         -fx-border-width: 0.25px;
+         -fx-border-color: transparent gray gray transparent;
+ }
+
+/* Make the text in the placeholder red and bold */
+.table-view .placeholder .label {
+        -fx-text-fill: red;
+        -fx-font-weight: bold;
+}
+
+/* Set the filler background to white*/
+.table-view .column-header-background .filler {
+        -fx-background-color: white;
+}
