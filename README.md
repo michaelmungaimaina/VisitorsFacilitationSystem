@@ -9,7 +9,7 @@ It includes features like
 - Complaint/Compliment management window
 
 Technologies used include;
-> JavaFX 
-> MySQL server
-> CSS 
+> JavaFX >>
+> MySQL server >>
+> CSS >>
 > SQL
